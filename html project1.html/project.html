@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        body{
+            background-image:url(travel.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            
+
+        }
+        header{
+            text-align: center;
+            background-color: aqua;
+            padding: 1px;
+            margin: 4px;
+            color: rgb(17, 17, 17);
+            font-size:20px;
+            font-family: ;
+             }
+        nav ul li{
+            list-style:none;
+            margin: 5px;
+           font-size: 16px;
+           font-style: normal;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav ul li a{
+            color:black;
+            text-decoration: none;
+            justify-content: space-between;
+            font-size:40px;
+            margin: 5px;
+            padding: 1px;
+        }
+        nav ul li a:hover{
+            background-color: grey;
+        }
+        main{
+            text-align:center;
+            font-size: 30px;
+            
+        }
+        form{
+            background-color:grey;
+            margin: 40px;
+            padding:15px;
+        
+        }
+        .hero  input,.hero button{
+            padding: 15px;
+            border-radius: 5px;
+            border:none;
+            margin: 10px;
+        }
+        .hero button{
+            background-color: black;
+            color:darkslateblue;
+            
+        }
+        h3{
+            color: darkblue;
+            font-size: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h2>Go Trip</h2>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="package.html">Package</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact us .html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+            <h3>Find your Next tour!</h3>
+            <form action="#">
+        
+                <div>
+                      <label for="places">Destination:</label>
+                    <select id="places" name="places">
+                      <option value="#">Where would you like to visit </option>
+                      <option value="#">Ladakh</option>
+                      <option value="#">Rishikesh</option>
+                      <option value="#">Spiti</option>
+                      <option value="#">Manali</option>
+                      <option value="#">Andaman</option>
+                      <option value="#">Jaipur</option>
+                      <option value="#">Varanasi</option>
+                      <option value="#">Khajuraho</option>
+                      <option value="#">Hampi</option>
+                      <option value="#">Agra</option>
+                      <option value="#">Delhi</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="#">Luckhnow</option>
+                      <option value="#">Himachal Pradesh</option>
+                      <option value="##">Kolkata</option><option value="Himachal pradesh">Himachal Pradesh</option>
+                      <option value="#">Ranthambore</option>
+                      <option value="#">Jim Corbett</option>
+                      <option value="#">Kaziranga</option>
+                      <option value="#">Sundarbans</option>
+                      <option value="#">Udaipur</option>
+                      <option value="#">Kerala backwaters</option>
+                      <option value="#">Goa</option>
+                      <option value="#">Rajasthan</option>
+                      <option value="#">Sikkim</option>
+                      <option value="#">Rajasthan</option>
+                      <option value="#">Leh</option>
+                      <option value="#">Coorg</option>
+                      <option value="#">Mysore</option>
+                      <option value="#">Meghalaya</option>
+                      <option value="#">Ooty</option>
+                      <option value="#">Darjeeling</option>
+                      <option value="#">Shimla</option>
+                      <option value="#">Udaipur</option>
+                      <option value="#">Varanasi</option>
+                      <option value="#">Haridwar</option>
+                      <option value="#">Tirupati</option>
+                      <option value="#">Rameswaram</option>
+                      </select><br>
+                      <script>
+                        // Get the select element
+                        const select = document.getElementById('places');
+                
+                        // Convert options to an array
+                        const optionsArray = Array.from(select.options);
+                
+                        // Sort the options alphabetically
+                        optionsArray.sort((a, b) => a.text.localeCompare(b.text));
+                
+                        // Clear the existing options
+                        select.innerHTML = '';
+                
+                        // Append sorted options back to the select element
+                        optionsArray.forEach(option => {
+                            select.add(option);
+                        });
+                    </script>
+                      
+                      </div>
+
+                <label for="date">From</label>
+                <input type="date" id="date" name="date">
+                <label for="date">To</label>
+                <input type="date" id="date" name="date">
+
+
+                <button type="submit">Book</button>
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

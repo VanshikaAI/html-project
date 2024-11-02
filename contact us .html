@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f0f0f0;
+            font-size: 30px;
+        }
+        fieldset {
+            margin: 50px auto;
+            width: 500px;
+            padding: 30px;
+        }
+        legend {
+            font-size: 50px;
+        }
+        .detes {
+            padding: 10px 0;
+            display: block;
+            width: 100%;
+            margin: 10px auto;
+        }
+        #gender {
+            padding-left: 10px;
+        }
+        #bio {
+            height: 100%;
+        }
+        #submit-btn {
+            background-color: aqua;
+            border: none;
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend> Contact Us Form</legend>
+            <!-- <h1>Registration Form</h1> -->
+            <label for="name">Name<input class="detes" type="text" name="name" id="name"></label>
+            <label for="email_id">Email<input class="detes" type="email" name="email_id" id="email_id"></label>
+           
+            
+            <label for="bio">Query
+                <textarea class="detes" name="bio" id="bio" rows="10" cols="40"></textarea>
+            </label>
+            <button class="detes" id="submit-btn">Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

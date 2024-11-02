@@ -1,0 +1,232 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Go Trip - Travel Booking</title>
+       <style>
+        /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f5f5;
+    }
+    
+    header {
+        background-color: #00bcd4;
+        padding: 1rem;
+        color: #fff;
+        text-align: center;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: bold;
+        
+    }
+    
+    header nav a :hover{
+        background-color:blue;
+    }
+    
+    .hero {
+        background: url('images/hero-collage.jpg') center/cover no-repeat;
+        color: #003366;
+        text-align: center;
+        padding: 4rem 1rem;
+        position: relative;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #1a73e8;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .search-form {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 8px;
+        padding: 1.5rem;
+        max-width: 500px;
+        margin: 1.5rem auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .search-form label {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .destination{
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        font-size:10px;
+        
+    }
+    .destination label {
+      width: 1000px;
+      
+      margin: 5px;
+      padding: 5px;
+    }
+    
+    .search-form input[type="text"], 
+    .search-form input[type="date"] {
+        padding: 0.5rem;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 0.3rem;
+    }
+    
+    .search-form button {
+        padding: 0.7rem 2rem;
+        background-color: #1a73e8;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+    }
+    
+    .search-form button:hover {
+        background-color: #005bb5;
+    }
+    date-input {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    
+       </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Go Trip</h1>
+                <nav>
+                    <a href="home.html">Home</a>
+                    <a href="tour2.html">Tours</a>
+                    <a href="package.html">Packages</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about us.html">About Us</a>
+                    <a href="contact us .html">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="hero">
+            <h2>Find Your Next Tour!</h2>
+            <form class="search-form">
+                
+                <div class="destination">
+                    <label for="places">Destination:</label> <select id="places" name="places">
+                    <option value="#">Where would you like to visit </option>
+                    <option value="#">Ladakh</option>
+                    <option value="#">Rishikesh</option>
+                    <option value="#">Spiti</option>
+                    <option value="#">Manali</option>
+                    <option value="#">Andaman</option>
+                    <option value="#">Jaipur</option>
+                    <option value="#">Varanasi</option>
+                    <option value="#">Khajuraho</option>
+                    <option value="#">Hampi</option>
+                    <option value="#">Agra</option>
+                    <option value="#">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="#">Luckhnow</option>
+                    <option value="#">Himachal Pradesh</option>
+                    <option value="##">Kolkata</option><option value="Himachal pradesh">Himachal Pradesh</option>
+                    <option value="#">Ranthambore</option>
+                    <option value="#">Jim Corbett</option>
+                    <option value="#">Kaziranga</option>
+                    <option value="#">Sundarbans</option>
+                    <option value="#">Udaipur</option>
+                    <option value="#">Kerala backwaters</option>
+                    <option value="#">Goa</option>
+                    <option value="#">Rajasthan</option>
+                    <option value="#">Sikkim</option>
+                    <option value="#">Rajasthan</option>
+                    <option value="#">Leh</option>
+                    <option value="#">Coorg</option>
+                    <option value="#">Mysore</option>
+                    <option value="#">Meghalaya</option>
+                    <option value="#">Ooty</option>
+                    <option value="#">Darjeeling</option>
+                    <option value="#">Shimla</option>
+                    <option value="#">Udaipur</option>
+                    <option value="#">Varanasi</option>
+                    <option value="#">Haridwar</option>
+                    <option value="#">Tirupati</option>
+                    <option value="#">Rameswaram</option>
+                    </select><br>
+                    <script>
+                      // Get the select element
+                      const select = document.getElementById('places');
+              
+                      // Convert options to an array
+                      const optionsArray = Array.from(select.options);
+              
+                      // Sort the options alphabetically
+                      optionsArray.sort((a, b) => a.text.localeCompare(b.text));
+              
+                      // Clear the existing options
+                      select.innerHTML = '';
+              
+                      // Append sorted options back to the select element
+                      optionsArray.forEach(option => {
+                          select.add(option);
+                      });
+                  </script>
+                    
+                    </div>
+            
+                <div class="date-input">
+                    <label for="from-date">From:</label>
+                    <input type="date" id="from-date" required>
+                    <label for="to-date">To:</label>
+                    <input type="date" id="to-date" required>
+                </div>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Go Trip. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
