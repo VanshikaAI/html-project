@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
     
-        <style>
-
-     h1{font-family: Arial, Helvetica, sans-serif;
+    body {
+      font-family: Helvetica;
+      /* margin: 30px; */
+      /* padding: 30px; */
+      background-image: url(https://travelpro.com/cdn/shop/articles/shutterstock_1181523733_1024x1024.webp?v=1697120789);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 70px;
+    }
+    
+    header {
+      background-color: #00bcd4;
+      /* padding: 1rem; */
+      color: #fff;
+      text-align: center;
+    }
+    
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 30px;
+    }
+    
+    header h1 {
+      font-size: 1.8rem;
+      margin: 30px auto 30px 30px;
+    }
+    
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    
+    header nav a :hover {
+      background-color: blue;
+    }
+    .main-title {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 90px;
+      margin: 40px auto;
+    }
+    .para {
+      font-size: 30px;
+      width: 90%;
+      margin: 30px auto;
+      background-color: rgba(0, 0, 0, 0.28);
+      padding: 25px;
+      border-radius: 10px;
+      line-height: 40px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
         text-align: center;
-        font-size: 90px;
-            
-        }
-        body{font-family:  Helvetica;
-          font-size: 30px;  
-margin: 30px;
-padding: 30px;
-        }
-    </style>
+        padding: 2rem 0;
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+  </style>
 </head>
-<body>
-  <h1>Welcome To Go Trip Agency  !</h1>
-  <p> 
-    <i>
-    <b>Your next adventure awaits here at agency go trip ,we belive the world is full of wonders wating to be discovered .
-     Whether you're chasing the thrill of a mountain trek, diving into crystal-clear waters, or wandering through ancient cities, we’re here to turn your travel dreams into reality. 
-     From guided tours to off-the-beaten-path adventures, we've got you covered.
 
-    Explore our handpicked travel experiences, designed for adventurers, explorers, and thrill-seekers alike. 
-    Pack your bags—your adventure starts now!
+<body>
+  <header>
+    <div class="container">
+      <h1>Go Trip</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <!-- <a href="register.html">Register/Login</a> -->
+        <a href="tour2.html">Tours</a>
+        <a href="package.html">Packages</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us .html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <h1 class="main-title">Welcome To Go Trip Agency !</h1>
+  <p class="para">
+    <i>
+      <b>Your next adventure awaits here at agency go trip ,we belive the world is full of wonders wating to be
+        discovered .
+        Whether you're chasing the thrill of a mountain trek, diving into crystal-clear waters, or wandering through
+        ancient cities, we’re here to turn your travel dreams into reality.
+        From guided tours to off-the-beaten-path adventures, we've got you covered.
+
+        Explore our handpicked travel experiences, designed for adventurers, explorers, and thrill-seekers alike.
+        Pack your bags—your adventure starts now!
     </i>
     </b>
-     </p>
-    
-
-
-
-
+  </p>
+  <footer>
+    <p>&copy; 2024 Go Trip. All rights reserved.</p>
+</footer>
 </body>
+
+
 </html>

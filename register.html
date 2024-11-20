@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALA JI FASHION - Login & Register</title>
+    <title>Go Trip</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
 
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 50px auto 0;
             padding: 20px;
             display: flex;
             justify-content: space-around;
@@ -34,7 +35,7 @@
         .auth-form {
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             padding: 30px;
             width: 100%;
             max-width: 400px;
@@ -46,7 +47,7 @@
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #EE1C47;
+            color: #00bcd4;
         }
 
         .input-group {
@@ -70,7 +71,7 @@
         .submit-btn {
             width: 100%;
             padding: 12px;
-            background-color: #EE1C47;
+            background-color: #00bcd4;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -81,7 +82,7 @@
         }
 
         .submit-btn:hover {
-            background-color: #d41a3f;
+            background-color: #00bcd4;
         }
 
         .form-footer {
@@ -90,7 +91,7 @@
         }
 
         .form-footer a {
-            color: #EE1C47;
+            color: #00bcd4;
             text-decoration: none;
         }
 
@@ -180,5 +181,41 @@
             </div>
         </form>
     </div>
+    <!-- <button >Try it</button> -->
+
+<script>
+
+function navigateToRegister(event) {
+    event.preventDefault(); 
+    const form = event.target.closest("form");
+    const inputs = form.querySelectorAll("input[required]");
+
+    let isValid = true;
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            isValid = false;
+            input.style.border = "1px solid red";
+            input.placeholder = "This field is required";
+        } else {
+            input.style.border = ""; 
+        }
+    });
+
+
+    if (isValid) {
+        console.log("Form is valid, navigating to home.html");
+        window.location.href = "home.html";
+    } else {
+        console.log("Please fill all required fields.");
+    }
+}
+
+let buttons = document.getElementsByClassName("submit-btn");
+
+Array.from(buttons).forEach(button => {
+    button.addEventListener("click", navigateToRegister);
+});
+
+</script>
 </body>
 </html>

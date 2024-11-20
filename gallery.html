@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery</title>
     <style>
-        img{
-            width: 500px;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        
+
+        img {
+            width: 500px;
+            height: 400px;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        header {
+            background-color: #00bcd4;
+            /* padding: 1rem; */
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 30px auto 30px 30px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        header nav a :hover {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
+
 <body>
-    <img src="pic1.1copy.jpg" alt="">
-    <img src="pic2.2copy.jpg" alt="">
-    <img src="pic3.3copy.jpg" alt="">
-    <img src="pic4.4copy.jpg" alt="">
-    <img src="pic5.5 copy.jpg" alt="">
-    <img src="pic6.6 copy.jpg" alt="">
-    <img src="pic7.7 copy.jpg" alt="">
-    <img src="pic8.8copy.jpg" alt="">
-    <img src="pic9.9 copy.jpg" alt="">
-    <img src="pic10.10 copy.jpg" alt="">
-    <img src="pic11.11 copy.jpg" alt="">
-    <img src="pic12.12 copy.jpg" alt="">
+    <header>
+        <div class="container">
+            <h1>Go Trip</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <!-- <a href="register.html">Register/Login</a> -->
+                <a href="tour2.html">Tours</a>
+                <a href="package.html">Packages</a>
+                <a href="blog.html">Blog</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about us.html">About Us</a>
+                <a href="contact us .html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container1">
+        <img src="gal/pic1.1copy.jpg" alt="">
+        <img src="gal/pic2.2copy.jpg" alt="">
+        <img src="gal/pic3.3copy.jpg" alt="">
+        <img src="gal/pic4.4copy.jpg" alt="">
+        <img src="gal/pic5.5 copy.jpg" alt="">
+        <img src="gal/pic6.6 copy.jpg" alt="">
+        <img src="gal/pic7.7 copy.jpg" alt="">
+        <img src="gal/pic8.8copy.jpg" alt="">
+        <img src="gal/pic9.9 copy.jpg" alt="">
+        <img src="gal/pic10.10 copy.jpg" alt="">
+        <img src="gal/pic11.11 copy.jpg" alt="">
+        <img src="gal/pic12.12 copy.jpg" alt="">
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Go Trip. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

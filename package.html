@@ -5,13 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Tour Packages Table</title>
     <style>
-        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #00bcd4;
+            /* padding: 1rem; */
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 30px auto 30px 30px;
+            color: white;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav {
+            margin-right: 30px;
+        }
+
+        header nav a :hover {
+            background-color: blue;
+        }
         table {
             width: 90%;
             border-collapse: collapse;
-            margin: 50px;
+            margin: 50px auto;
             padding: 10px;
-            margin-right: 10px;
+            /* margin-right: 10px; */
         }
         th, td {
             border: 3px solid black;
@@ -25,15 +65,40 @@
         td{
             background-color: bisque;
         }
-        h1{color: black;
-                margin: 30px;
-                padding: 20px;
+        h1{
+            color: black;
+            margin: 50px 100px 10px;
+            /* padding: 20px; */
 
         }
+        footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
     </style>
 </head>
 <body>
-
+    <header>
+        <div class="container">
+          <h1>Go Trip</h1>
+          <nav>
+            <a href="home.html">Home</a>
+            <!-- <a href="register.html">Register/Login</a> -->
+            <a href="tour2.html">Tours</a>
+            <a href="package.html">Packages</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us .html">Contact Us</a>
+          </nav>
+        </div>
+      </header>
     <h1>Indian Tour Packages</h1>
 
     <table>
@@ -142,6 +207,8 @@
             </tr>
         </tbody>
     </table>
-
+    <footer>
+        <p>&copy; 2024 Go Trip. All rights reserved.</p>
+    </footer>
 </body>
 </html>
